@@ -6,8 +6,8 @@ function NavBar(props) {
             <div id="logo">
                 Clicky Game!
             </div>
-            <div id="score">Score: 0</div>
-            <div id="topScore">Top Score: 0</div>
+            <div id="score">Score: {props.score}</div>
+            <div id="topScore">Top Score: {props.highScore}</div>
         </div>
     )
 }
