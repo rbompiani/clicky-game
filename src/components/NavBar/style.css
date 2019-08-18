@@ -1,0 +1,27 @@
+nav {
+    padding: 20px;
+    background: #2e5150;
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+#logo {
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+    display: inline-block;
+    grid-column: 1 / 6;
+    margin-bottom: 10px;
+}
+
+#score, #topScore{
+    display: inline-block;
+    color: white;
+    place-self: end;
+}
+
+b {
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+}

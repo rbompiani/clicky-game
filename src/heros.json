@@ -1,63 +1,74 @@
 [
     {
         "id": 1,
-        "image": "public/images/",
+        "name": "Batman",
+        "image": "/images/batman.jpg",
         "selected": false
     },
     {
         "id": 2,
-        "image": "public/images/",
+        "name": "Captain America",
+        "image": "/images/captainamerica.jpg",
         "selected": false
     },
     {
         "id": 3,
-        "image": "public/images/",
+        "name": "Cyclops",
+        "image": "/images/cyclops.jpg",
         "selected": false
     },
     {
         "id": 4,
-        "image": "public/images/",
+        "name": "Dare Devil",
+        "image": "/images/daredevil.jpg",
         "selected": false
     },
     {
         "id": 5,
-        "image": "public/images/",
+        "name": "Green Lantern",
+        "image": "/images/greenlantern.jpg",
         "selected": false
-    },  
+    },
     {
         "id": 6,
-        "image": "public/images/",
+        "name": "Iron Man",
+        "image": "/images/ironman.jpg",
         "selected": false
     },
     {
         "id": 7,
-        "image": "public/images/",
+        "name": "Robin",
+        "image": "/images/robin.jpg",
         "selected": false
     },
     {
         "id": 8,
-        "image": "public/images/",
+        "name": "Spiderman",
+        "image": "/images/spiderman.jpg",
         "selected": false
     },
     {
         "id": 9,
-        "image": "public/images/",
+        "name": "Superman",
+        "image": "/images/superman.jpg",
         "selected": false
     },
     {
         "id": 10,
-        "image": "public/images/",
+        "name": "The Flash",
+        "image": "/images/theflash.jpg",
         "selected": false
     },
     {
         "id": 11,
-        "image": "public/images/",
+        "name": "The Hulk",
+        "image": "/images/thehulk.jpg",
         "selected": false
     },
     {
         "id": 12,
-        "image": "public/images/",
+        "name": "Wolverine",
+        "image": "/images/wolverine.jpg",
         "selected": false
-    } 
-
+    }
 ]

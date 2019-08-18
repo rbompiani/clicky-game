@@ -4,7 +4,9 @@ import "./style.css";
 
 function HeroCard(props) {
     return (
-        <div className="heroCard" onClick={() => props.selectCard(props.id)}>{props.id}</div>
+        <div className="heroCard" onClick={() => props.selectCard(props.id)}>
+            <img src={process.env.PUBLIC_URL + props.image} alt={props.name}/>
+        </div>
     )
 }
 

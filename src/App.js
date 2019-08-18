@@ -49,33 +49,15 @@ selectCard = id => {
       
       <Wrapper>
         <NavBar score={this.state.score} highScore={this.state.highScore} />
-        {this.state.heros.map(hero => (
-          <HeroCard id={hero.id} key={hero.id} image={hero.image} selected={hero.selected} selectCard={this.selectCard}/>
-        ))}
+        <main>
+          {this.state.heros.map(hero => (
+            <HeroCard id={hero.id} key={hero.id} image={hero.image} selected={hero.selected} selectCard={this.selectCard}/>
+          ))}          
+        </main>
+
       </Wrapper>
     )
   }
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
