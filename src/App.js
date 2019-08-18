@@ -15,21 +15,22 @@ class App extends React.Component {
   
 
 selectCard = id => {
+  let heros = this.state.heros;
+  const hero = heros.find(hero => hero.id === id);
+  const foundIndex = heros.findIndex(hero => hero.id === id);
 
-  //this.setState({score: id});
-  const foundIndex = this.state.heros.findIndex(x => x.id === id);
-  console.log(foundIndex);
-  const selectedProp = this.state.heros[foundIndex].selected;
-  const score= this.state.score;
-
-  if (selectedProp === true){
+  // ALREADY SELECTED - END GAME AND RESET SELECTED PROPS
+  if (heros[foundIndex].selected === true){
+    // reset current score
     this.setState({score: 0});
+
+  // NOT ALREADY SELECTED - SET SELECTED, ADD TO SCORE, SET HIGH SCORE, SHUFFLE ARRAY
   } else {
-    this.setState({score: score+1})
-      let newState = Object.assign({}, this.state);
-      newState.heros[foundIndex].selected = true;
-    this.setState({newState});
+    this.setState({score: this.state.score+1})
+      heros[foundIndex].selected = true;
+    this.setState({heros: heros});
   }
+
   // } else {
   //   this.setState((state, id) => {
   //     return {counter: state.counter + props.step};
